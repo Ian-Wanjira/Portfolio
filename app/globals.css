@@ -2,25 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Define CSS variables for the fonts */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --font-inter: 'Inter', sans-serif;
+  --font-fira-mono: 'Fira Mono', monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Deafult body font */
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter);
 }
 
 @layer utilities {
+  .fira-mono {
+    font-family: var(--font-fira-mono);
+  }
+
   .text-balance {
     text-wrap: balance;
   }
