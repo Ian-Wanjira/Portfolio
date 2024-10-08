@@ -12,6 +12,7 @@ const inter = Inter({
 });
 
 // Fira Mono font (monoscoped)
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const firaMono = Fira_Mono({
   subsets: ['latin'],
   weight: ['400', '500'],
