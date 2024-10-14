@@ -2,23 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Define CSS variables for the fonts */
-:root {
-  --font-inter: 'Inter', sans-serif;
-  --font-fira-mono: 'Fira Mono', monospace;
-}
+@layer base {
+  /* Remove scrollbar */
+  .remove-scrollbar::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    border-radius: 0px;
+  }
 
-/* Deafult body font */
-body {
-  font-family: var(--font-inter);
+  .remove-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 0px;
+  }
+
+  .remove-scrollbar::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 0px;
+  }
+
+  .remove-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+  }
 }
 
 @layer utilities {
-  .fira-mono {
-    font-family: var(--font-fira-mono);
+  /* Vertical line */
+  .vl {
+    @apply md:border-l border-slate-400 h-20;
   }
 
-  .text-balance {
-    text-wrap: balance;
+  /* Mobile nav */
+  .mobilenav-sheet {
+    @apply flex h-[calc(100vh-172px)] flex-col justify-between overflow-y-auto;
+  }
+
+  .mobilenav-sheet_close {
+    @apply flex gap-3 items-center p-4 rounded-lg w-full max-w-60;
   }
 }
