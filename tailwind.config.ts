@@ -10,13 +10,28 @@ const config: Config = {
   theme: {
     container: {
       center: true,
-      padding: '2rem',
+      padding: '3rem',
     },
     extend: {
       colors: {
         primary: '#00122C',
         secondary: '#0FEE82',
         darkPrimary: '#00122C',
+        blue: {
+          100: '#00275F',
+        },
+        white: {
+          200: '#D4DCFF',
+          300: '#8E9AAB',
+          400: '#838B8A',
+        },
+      },
+      rotate: {
+        '90': '90deg',
+      },
+      fontFamily: {
+        inter: ['var(--font-inter)', 'sans-serif'],
+        firaMono: ['var(--font-fira-mono)', 'monospace'],
       },
     },
   },
