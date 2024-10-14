@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter, Fira_Mono } from 'next/font/google';
 
+import { ThemeProvider } from '@/components/theme-provider';
 import './globals.css';
 import { cn } from '@/lib/utils';
 
@@ -12,7 +13,6 @@ const inter = Inter({
 });
 
 // Fira Mono font (monoscoped)
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const firaMono = Fira_Mono({
   subsets: ['latin'],
   weight: ['400', '500'],
@@ -32,9 +32,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={cn('min-h-screen font-sans antialiased', inter.variable)}
+        className={cn(
+          'min-h-screen font-sans antialiased',
+          inter.variable,
+          firaMono.variable,
+        )}
       >
-        {children}
+        <ThemeProvider attribute="class" defaultTheme="dark">
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
