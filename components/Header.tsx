@@ -33,10 +33,12 @@ const Header = () => {
   };
 
   return (
-    <header className="py-6 fixed w-full">
-      <nav className="py-2  backdrop-blur mx-6 rounded-xl bg-transparent hidden md:block">
-        <div className="flex justify-between items-center px-6">
-          <div className="logo">Ian</div>
+    <header className="py-4 md:py-6 fixed w-full backdrop-blur bg-transparent z-50">
+      <nav className="rounded-xl  hidden md:block">
+        <div className="flex justify-between items-center px-9">
+          <Link href="/" className="logo">
+            Ian
+          </Link>
           <div className="flex items-center gap-8 text-sm text-slate-400">
             {navLinks.map((link) => {
               const isActive = activeLink === link.route;
@@ -47,7 +49,7 @@ const Header = () => {
                   key={link.label}
                   onClick={() => handleClick(link.route)}
                   className={cn(
-                    'font-firaMono',
+                    'font-firaMono hover:text-secondary hover:underline hover:underline-offset-8',
                     isActive
                       ? 'text-secondary underline underline-offset-8'
                       : 'text-slate-400',
@@ -59,15 +61,18 @@ const Header = () => {
               );
             })}
           </div>
-          <Button
-            variant="outline"
-            className="text-secondary border-secondary font-firaMono"
-          >
-            Resume
-          </Button>
+          <div className="relative z-10">
+            <Button
+              variant="outline"
+              className="btn text-secondary border-secondary font-firaMono bg-primary"
+              onClick={() => window.open('/assets/files/CV.pdf', '_blank')}
+            >
+              Resume
+            </Button>
+          </div>
         </div>
       </nav>
-      <div className="h-14 md:hidden md:h-16 flex items-center justify-between px-5">
+      <div className="h-14 md:hidden md:h-16 flex items-center justify-between px-5 backdrop-blur">
         <p>Ian</p>
         <MobileNav />
       </div>
