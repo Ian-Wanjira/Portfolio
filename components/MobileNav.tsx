@@ -10,6 +10,7 @@ import {
   SheetContent,
   SheetClose,
   SheetTrigger,
+  SheetTitle,
 } from '@/components/ui/sheet';
 import { navLinks } from '@/constants';
 import { cn } from '@/lib/utils';
@@ -44,9 +45,11 @@ const MobileNav = () => {
           <HamburgerMenuIcon className="w-6 h-6" />
         </SheetTrigger>
         <SheetContent side="left" className="border-none bg-primary">
-          <Link href={'/'}>
-            <h1>Ian</h1>
-          </Link>
+          <SheetTitle>
+            <Link href={'/'}>
+              <h1>Ian</h1>
+            </Link>
+          </SheetTitle>
 
           <div className="mobilenav-sheet">
             <SheetClose asChild>
