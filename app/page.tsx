@@ -62,19 +62,22 @@ const Home = () => {
       </div>
       <div className=" px-12 md:px-32">
         <section className="min-h-screen mb-32 md:mb-0 flex items-center justify-center md:gap-10 md:pt-32">
-          <div className="md:text-center flex flex-col gap-8 md:gap-0 md:items-center">
+          <div className="md:text-center flex flex-col gap-6 md:gap-0 md:items-center">
             <h3 className="font-firaMono text-base leading-4 text-secondary md:pb-6">
               Hi my name is
             </h3>
-            <h1 className="text-4xl font-semibold md:text-7xl md:pb-10 text-white-200 leading-[44px] md:leading-tight">
-              Ian Wanjira. <br></br>
-              <span className="text-white-300">I build Great Software.</span>
+            <h1 className="text-4xl font-semibold md:text-7xl md:pb-6 text-white-200 leading-[44px] md:leading-tight">
+              Ian Wanjira.
             </h1>
-            <p className="text-lg max-w-sm md:max-w-2xl md:text-xl md:pb-10 text-white-400">
-              I’m a FullStack engineer specializing in building (and
-              occasionally designing) exceptional digital experiences.
-              Currently, I’m focused on building accessible, human-centered
-              products.
+            <p className="text-white-300 text-5xl md:text-6xl md:tracking-tight">
+              I create exceptional software solutions.
+            </p>
+            <p className="text-lg max-w-sm md:max-w-2xl md:text-xl md:pb-10 md:pt-6 text-white-400">
+              I’m a FullStack engineer specializing in creating (and sometimes
+              designing) exceptional digital experiences that blend
+              functionality with user-centric design. Currently, I’m focused on
+              crafting accessible, human-centered products that make a
+              difference.
             </p>
             <Link href="#contact" className="relative z-10 w-56">
               <Button
@@ -101,17 +104,19 @@ const Home = () => {
           <div className="flex flex-col md:flex-row md:gap-24">
             <div>
               <p className="text-lg md:text-xl text-white-400 mb-4">
-                Hello! My name is Ian and I enjoy creating things that live on
-                the internet. My interest in web development started back in
-                2019 when I decided to try editing custom Bootstrap themes —
-                turns out hacking together a custom reblog button taught me a
-                lot about HTML & CSS!
+                Hello! I’m Ian, a passionate Software Engineer dedicated to
+                crafting engaging digital experiences. My journey in web
+                development began in 2019, experimenting with custom Bootstrap
+                themes and discovering the power of HTML and CSS through small,
+                hands-on projects.
               </p>
               <p className="text-lg md:text-xl text-white-400 mb-4">
-                Fast-forward to today, and I’ve had the privilege of working at
-                CintelCore I.T Limited and EpicApp Limited. My main focus these
-                days is building accessible, inclusive products and digital
-                exepriences for everyone.
+                Since then, I&apos;ve had the privilege to work with innovative
+                teams at CintelCore I.T. Limited and EpicApp Limited, where I
+                gained extensive experience in designing and delivering
+                accessible, inclusive products. Today, my focus is on building
+                digital solutions that are not only functional but also
+                welcoming and intuitive for everyone.
               </p>
               <p className="text-lg md:text-xl text-white-400 mb-4">
                 Here are a few technologies that I work with:
@@ -192,10 +197,10 @@ const Home = () => {
           </h1>
           <div className="flex justify-center">
             <p className="text-center text-white-400 text-lg pt-4 md:pt-8 mb-8 md:mb-16 md:max-w-lg">
-              I&apos&apos;m always open to new challenges and opportunities.
-              Whether you need a seasoned developer to bring your ideas to life
-              or want to connect and exchange insights, feel free to reach out.
-              I&apos;ll respond promptly and look forward to engaging with you!
+              I’m always open to new challenges and opportunities. If you’re
+              looking for an experienced developer to bring your vision to life
+              or simply want to connect and share insights, don’t hesitate to
+              reach out. I look forward to connecting with you!
             </p>
           </div>
           <div className="flex justify-center">
