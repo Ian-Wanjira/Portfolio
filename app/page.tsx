@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <main className="bg-primary overflow-y-auto">
       <Header />
-      <div className=" flex md:flex-col items-center justify-center fixed my-auto h-screen gap-8 ml-8">
+      <div className=" flex md:flex-col items-center justify-center fixed my-auto h-screen gap-8 ml-10">
         <div className="hidden md:flex md:flex-col gap-4 w-full justify-center items-center  md:items-start">
           <Link href="https://github.com/Ian-Wanjira" target="_blank">
             <div className="icon-wrapper">
