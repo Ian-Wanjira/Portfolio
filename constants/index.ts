@@ -70,6 +70,7 @@ export const Projects = [
       'TypeScript',
       'SCSS',
       'PayloadCMS',
+      'MongoDB',
       'Stripe',
       'Docker',
     ],
