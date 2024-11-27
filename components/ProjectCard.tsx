@@ -24,7 +24,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
       {/* Content with higher z-index to remain on top and clickable */}
       <div className="relative z-10">
         <div className="browser-skeleton hidden md:block md:absolute md:min-w-[500px] md:min-h-[362px]">
-          <Link href="/">
+          <Link href={project.projectUrl} target="_blank">
             <Image
               src={project.imageUrl}
               alt="project image"
@@ -35,7 +35,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           </Link>
         </div>
 
-        <div className="">
+        <div>
           <div className="flex justify-end">
             <Link href={project.projectUrl} target="__blank">
               <CardHeader>
