@@ -35,6 +35,15 @@ export const Technologies = [
 
 export const Projects = [
   {
+    title: 'Modern Saas Landing Page',
+    description:
+      'Responsive SaaS (Software as a Service) landing page built primarily with TypeScript. The project is designed to provide a sleek and professional front-end interface for SaaS products, enabling businesses to showcase their services effectively.',
+    imageUrl: '/assets/images/saas.png',
+    projectUrl: 'https://saas-landing-page-inky.vercel.app/',
+    technologies: ['Next.js', 'TypeScript', 'Shadcn/ui', 'Motion'],
+    githubLinks: ['https://github.com/Ian-Wanjira/Saas-Landing-Page'],
+  },
+  {
     title: 'Patient Management System',
     description:
       'A healthcare patient management system that allows patients to easily register, book, and manage their appointments with doctors, featuring administrative tools for scheduling, confirming, and canceling appointments, along with SMS notifications, all built using Next.js and DjangoRestFramework.',
