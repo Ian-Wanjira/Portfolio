@@ -47,7 +47,7 @@ export const Projects = [
     title: 'Patient Management System',
     description:
       'A healthcare patient management system that allows patients to easily register, book, and manage their appointments with doctors, featuring administrative tools for scheduling, confirming, and canceling appointments, along with SMS notifications, all built using Next.js and DjangoRestFramework.',
-    imageUrl: '/assets/images/onboarding1.jpg',
+    imageUrl: '/assets/images/carepulse.png',
     projectUrl: 'https://patient-management-frontend-five.vercel.app/',
     technologies: [
       'Next.js',
