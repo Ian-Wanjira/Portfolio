@@ -45,7 +45,7 @@ const Tab = () => {
               </Link>
             </h3>
             <p className="font-firaMono text-sm pt-4 mb-6 text-white-300">
-              Sep 2023 - Nov 2023
+              Jan 2023 - Nov 2023
             </p>
             <ul>
               <li className="flex items-start gap-5 mb-4">
@@ -117,7 +117,7 @@ const Tab = () => {
               </Link>
             </h3>
             <p className="font-firaMono text-sm pt-4 mb-6 text-white-300">
-              May 2023 - Oct 2023
+              May 2022 - Oct 2023
             </p>
             <ul>
               <li className="flex items-start gap-5 mb-4">
