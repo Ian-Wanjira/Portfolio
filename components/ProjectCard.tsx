@@ -17,7 +17,7 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
-    <Card className="relative md:bg-none bg-cover bg-center border-none shadow-lg md:shadow-none shadow-green-100/50 mb-6">
+    <Card className="relative max-w-5xl md:bg-none bg-cover bg-center border-none shadow-lg md:shadow-none shadow-green-100/50 mb-6">
       {/* Overlay for the fade effect, placed behind the content */}
       <div className="absolute inset-0 bg-primary opacity-95 z-0 md:hidden"></div>
 
