@@ -92,61 +92,63 @@ const Home = () => {
 
         <section
           id="about"
-          className="md:min-h-screen mb-32 md:mb-0 md:pt-32 flex flex-col justify-center"
+          className="md:min-h-screen mb-32 md:mb-0 md:pt-32 flex flex-col justify-center md:items-center"
         >
-          <h2 className="title font-inter text-2xl font-semibold text-slate-300 mb-8 md:w-3/5">
-            <span className="font-firaMono text-base font-normal text-secondary">
-              01.{'  '}
-            </span>
-            About Me
-          </h2>
+          <div>
+            <h2 className="title font-inter text-2xl font-semibold text-slate-300 mb-8 md:w-3/5">
+              <span className="font-firaMono text-base font-normal text-secondary">
+                01.{'  '}
+              </span>
+              About Me
+            </h2>
 
-          <div className="flex flex-col md:flex-row md:gap-24">
-            <div>
-              <p className="text-lg md:text-xl text-white-400 mb-4">
-                Hello! I’m Ian, a passionate Software Engineer dedicated to
-                crafting engaging digital experiences. My journey in web
-                development began in 2019, experimenting with custom Bootstrap
-                themes and discovering the power of HTML and CSS through small,
-                hands-on projects.
-              </p>
-              <p className="text-lg md:text-xl text-white-400 mb-4">
-                Since then, I&apos;ve had the privilege to work with innovative
-                teams at CintelCore I.T. Limited and EpicApp Limited, where I
-                gained extensive experience in designing and delivering
-                accessible, inclusive products. Today, my focus is on building
-                digital solutions that are not only functional but also
-                welcoming and intuitive for everyone.
-              </p>
-              <p className="text-lg md:text-xl text-white-400 mb-4">
-                Here are a few technologies that I work with:
-              </p>
-              <ul className="grid grid-cols-3 gap-3 mb-16">
-                {Technologies.map((tech, index) => (
-                  <li
-                    key={index}
-                    className="flex items-center gap-3 font-firaMono text-sm md:text-base text-white-400"
-                  >
-                    <Image
-                      src="/assets/icons/mdi_play.svg"
-                      alt="arrow"
-                      width={12}
-                      height={12}
-                    />
-                    {tech}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="flex justify-center">
-              <div className="profile relative h-64 w-64 md:w-80 md:h-80">
-                <Image
-                  src="/assets/images/me.jpg"
-                  alt="me"
-                  fill
-                  sizes="(max-width: 768px) 264px, (min-width: 768px) 500px"
-                  className="relative z-10 rounded-md"
-                />
+            <div className="flex flex-col md:flex-row md:gap-24">
+              <div>
+                <p className="text-lg max-w-5xl md:text-xl text-white-400 mb-4">
+                  Hello! I’m Ian, a passionate Software Engineer dedicated to
+                  crafting engaging digital experiences. My journey in web
+                  development began in 2019, experimenting with custom Bootstrap
+                  themes and discovering the power of HTML and CSS through
+                  small, hands-on projects.
+                </p>
+                <p className="text-lg max-w-5xl md:text-xl text-white-400 mb-4">
+                  Since then, I&apos;ve had the privilege to work with
+                  innovative teams at CintelCore I.T. Limited and EpicApp
+                  Limited, where I gained extensive experience in designing and
+                  delivering accessible, inclusive products. Today, my focus is
+                  on building digital solutions that are not only functional but
+                  also welcoming and intuitive for everyone.
+                </p>
+                <p className="text-lg md:text-xl text-white-400 mb-4">
+                  Here are a few technologies that I work with:
+                </p>
+                <ul className="grid grid-cols-3 gap-3 mb-16">
+                  {Technologies.map((tech, index) => (
+                    <li
+                      key={index}
+                      className="flex items-center gap-3 font-firaMono text-sm md:text-base text-white-400"
+                    >
+                      <Image
+                        src="/assets/icons/mdi_play.svg"
+                        alt="arrow"
+                        width={12}
+                        height={12}
+                      />
+                      {tech}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="flex justify-center">
+                <div className="profile relative h-64 w-64 md:w-80 md:h-80">
+                  <Image
+                    src="/assets/images/me.jpg"
+                    alt="me"
+                    fill
+                    sizes="(max-width: 768px) 264px, (min-width: 768px) 500px"
+                    className="relative z-10 rounded-md"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -154,32 +156,36 @@ const Home = () => {
 
         <section
           id="experience"
-          className="md:h-screen mb-32 md:mb-0 md:pt-32 flex flex-col justify-center md:pl-16"
+          className="md:h-screen mb-32 md:mb-0 md:pt-32 flex flex-col justify-center items-center md:pl-16"
         >
-          <h2 className="title font-inter text-2xl font-semibold text-slate-300 mb-8 md:mb-0 md:w-3/5">
-            <span className="font-firaMono text-base font-normal text-secondary">
-              02.{'  '}
-            </span>
-            Where I&apos;ve Worked
-          </h2>
-          <div className="md:pt-16 md:min-h-[450px]">
-            <Tab />
+          <div>
+            <h2 className="title font-inter text-2xl font-semibold text-slate-300 mb-8 md:mb-0 md:w-3/5">
+              <span className="font-firaMono text-base font-normal text-secondary">
+                02.{'  '}
+              </span>
+              Where I&apos;ve Worked
+            </h2>
+            <div className="md:pt-16 md:min-h-[450px]">
+              <Tab />
+            </div>
           </div>
         </section>
 
         <section
           id="projects"
-          className="md:min-h-screen mb-32 md:mb-0 md:pt-32 flex flex-col gap-8"
+          className="md:min-h-screen md:justify-center md:items-center mb-32 md:mb-0 md:pt-32 flex flex-col gap-8"
         >
-          <h2 className="title font-inter text-2xl font-semibold text-slate-300 mb-8 md:mb-0 md:w-3/5">
-            <span className="font-firaMono text-base font-normal text-secondary">
-              03.{'  '}
-            </span>
-            Projects I&apos;ve Built
-          </h2>
-          {Projects.map((project, index) => (
-            <ProjectCard key={index} project={project} />
-          ))}
+          <div>
+            <h2 className="title font-inter text-2xl font-semibold text-slate-300 mb-8 md:mb-0 md:w-3/5">
+              <span className="font-firaMono text-base font-normal text-secondary">
+                03.{'  '}
+              </span>
+              Projects I&apos;ve Built
+            </h2>
+            {Projects.map((project, index) => (
+              <ProjectCard key={index} project={project} />
+            ))}
+          </div>
         </section>
 
         <section
