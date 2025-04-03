@@ -37,7 +37,7 @@ const Header = () => {
       <nav className="rounded-xl  hidden md:block">
         <div className="flex justify-between items-center px-9">
           <Link href="/" className="logo">
-            Ian
+            <code className="hover:text-secondary">Ian</code>
           </Link>
           <div className="flex items-center gap-8 text-sm text-slate-400">
             {navLinks.map((link) => {
